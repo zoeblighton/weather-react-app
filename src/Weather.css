@@ -83,11 +83,16 @@ main {
 }
 
 .current-details {
-  color: #484a47;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 22px;
-}
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px; 
+    color: #484a47;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    margin-top: 10px;
+  }
+  
 
 .current-details strong {
   color: #e88873;
