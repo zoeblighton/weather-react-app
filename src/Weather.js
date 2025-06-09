@@ -1,12 +1,16 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import axios from "axios";
 import "./Weather.css";
 
 export default function Weather() {
-  const [city, setCity] = useState("");
+  const [city, setCity] = useState("Colchester");
   const [weatherData, setWeatherData] = useState(null);
   const [forecastData, setForecastData] = useState([]);
   const [error, setError] = useState(null);
+
+  useEffect(() => {
+    handleSearch({ preventDefault: () => {} });
+  }, []);
 
   const apiKey = "ad330884483abf7o091c0c43t8ea93ab";
 
