@@ -74,14 +74,17 @@ export default function Weather() {
             <div>
               <h2 className="current-city">{weatherData.city}</h2>
               <div className="current-details">
-                <p>{formatDate(new Date())}</p>
-                <p>{weatherData.condition.description}</p>
-                <p>
+                <span>{formatDate(new Date())}, </span>
+                <span>{weatherData.condition.description}</span>
+                <br />
+                <span>
                   Humidity: <strong>{weatherData.temperature.humidity}%</strong>
-                </p>
-                <p>
+                  ,{" "}
+                </span>
+
+                <span>
                   Wind: <strong>{weatherData.wind.speed} km/h</strong>
-                </p>
+                </span>
               </div>
             </div>
             <div className="current-temperature">
@@ -124,8 +127,25 @@ export default function Weather() {
 
       <footer>
         <p>
-          This project was coded by <a href="#">Your Name</a> and is
-          open-sourced on GitHub.
+          <p>
+            This project was coded by{" "}
+            <a
+              href="https://github.com/zoeblighton"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Zoe Blighton
+            </a>{" "}
+            and is open-sourced on{" "}
+            <a
+              href="https://github.com/zoeblighton/weather-react-app"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GitHub
+            </a>
+            .
+          </p>{" "}
         </p>
       </footer>
     </div>

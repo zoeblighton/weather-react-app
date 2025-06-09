@@ -1,10 +1,11 @@
 body {
-  background: #e0ac9d;
+  background: #f9f7fe;
   font-family: "Roboto", sans-serif;
 }
 
 a {
-  color: #5c6d70;
+  color: #885df1;
+  text-decoration: none;
 }
 
 h1 {
@@ -18,7 +19,7 @@ h1 {
 
 .weather-app {
   background: white;
-  max-width: 600px;
+  max-width: 800px;
   margin: 60px auto;
   padding: 30px;
   border-radius: 10px;
@@ -43,7 +44,7 @@ header {
 .search-button {
   margin-left: 5px;
   font-size: 16px;
-  background-color: #5c6d70;
+  background-color: #885df1;
   color: white;
   border: none;
   padding: 20px;
@@ -74,7 +75,7 @@ main {
 }
 
 .current-city {
-  font-size: 38px;
+  font-size: 53px;
   font-weight: 900;
   margin: 0;
   text-align: left;
@@ -145,6 +146,7 @@ main {
 
 footer {
   border-top: 1px solid #f9f7fe;
+  font-size: 14px;
   text-align: center;
   padding-top: 15px;
   color: #484a47;
