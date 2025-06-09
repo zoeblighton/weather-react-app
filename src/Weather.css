@@ -1,16 +1,12 @@
-.App {
-  text-align: center;
-}
-
 body {
   background: #e0ac9d;
-
   font-family: "Roboto", sans-serif;
 }
 
 a {
   color: #5c6d70;
 }
+
 h1 {
   font-size: 37px;
   font-weight: 900;
@@ -19,6 +15,7 @@ h1 {
   padding-top: 20px;
   padding-bottom: 40px;
 }
+
 .weather-app {
   background: white;
   max-width: 600px;
@@ -54,10 +51,12 @@ header {
   border-radius: 5px;
   transition: all 0.3s ease;
 }
+
 .search-button:hover {
   cursor: pointer;
   box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
 }
+
 main {
   padding: 30px;
   padding-top: 40px;
@@ -71,6 +70,7 @@ main {
 .current-weather {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .current-city {
@@ -80,6 +80,7 @@ main {
   text-align: left;
   padding-top: 30px;
 }
+
 .current-details {
   color: #484a47;
   font-size: 16px;
@@ -113,6 +114,7 @@ main {
   justify-content: space-around;
   margin-top: 30px;
 }
+
 .weather-forecast-date {
   text-align: center;
   color: #484a47;
@@ -127,6 +129,7 @@ main {
   display: block;
   margin: 0 auto;
 }
+
 .weather-forecast-temperatures {
   text-align: center;
   color: #e88873;
@@ -134,49 +137,15 @@ main {
   justify-content: center;
   margin-top: 10px;
 }
+
 .weather-forecast-temperature {
   padding: 0 10px;
   text-align: center;
 }
+
 footer {
   border-top: 1px solid #f9f7fe;
   text-align: center;
   padding-top: 15px;
-
   color: #484a47;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
