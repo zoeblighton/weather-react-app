@@ -9,7 +9,24 @@ export default function Weather() {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    handleSearch({ preventDefault: () => {} });
+    const fetchDefault = () => {
+      const url = `https://api.shecodes.io/weather/v1/current?query=Colchester&key=${apiKey}&units=metric`;
+
+      axios
+        .get(url)
+        .then((response) => {
+          setWeatherData(response.data);
+          setError(null);
+          fetchForecast("Colchester");
+        })
+        .catch(() => {
+          setWeatherData(null);
+          setForecastData([]);
+          setError("Error: City not found.");
+        });
+    };
+
+    fetchDefault();
   }, []);
 
   const apiKey = "ad330884483abf7o091c0c43t8ea93ab";
